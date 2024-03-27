@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/072e5df971.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <title>Instagram Photofeed with Bootstrap</title>
+</head>
+<body>
+    <div class="container">
+        <nav class="navbar bg-body-secondary p-0">
+            <div class="container-fluid bg-body-secondary p-2">
+                <a class="navbar-brand text-dark float-start" href="#"><i class="fa-brands fa-instagram"></i>Instagram</a>
+                <div class="d-flex flex-row-reverse">
+                  <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                      <div class="modal-dialog">
+                          <div class="modal-content">
+                              <div class="modal-header">
+                                  <h1 class="modal-title fs-5" id="staticBackdropLabel">Create a new post</h1>
+                                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="mb-3">
+                                        <label for="exampleFormControlTextarea1" class="form-label">Caption:</label>
+                                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="2" placeholder="Add the caption of your post here."></textarea>
+                                    </div>
+                                    <div class="mb-2">
+                                        <button type="button" class="btn" style="border-color:lightgrey;"><i class="fa-solid fa-camera" style="color: #000000;"></i></button>
+                                        <button type="button" class="btn" style="border-color:lightgrey;"><i class="fa-solid fa-location-dot" style="color: #000000;"></i></button>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-success">Publish</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <a class="btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fa-solid fa-gear" style="color: white;"></i>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end">
+                            <li><a class="dropdown-item" href="#">Profile</a></li>
+                            <li><a class="dropdown-item" href="#">Accesibility</a></li>
+                            <li><a class="dropdown-item" href="#">Privacy and Data</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a style="color: red" class="dropdown-item" href="#">Log out</a></li>
+                        </ul>
+                    </div>
+                    <button type="button" class="btn btn-success me-4" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Create a new post</button>
+                </div>  
+            </div>
+        </nav>
+        <section class="page-body">
+            <nav>
+                <div class="nav nav-tabs justify-content-center pt-2" id="nav-tab" role="tablist">
+                  <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true"><i class="fa-solid fa-table-cells"></i></button>
+                  <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false"><i class="fa-solid fa-square"></i></button>
+                </div>
+            </nav>
+            <div class="tab-content" id="nav-tabContent">
+                <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0">
+                    <div class="container mb-0 pb-0">
+                        <div class="row row-cols-3">
+                          <div class="col m-0 p-1"><img src="https://d319i1jp2i9xq6.cloudfront.net/upload/images/8068/8068_p.jpg?20150107041042" class="img-fluid"></div>
+                          <div class="col m-0 p-1"><img src="https://www.designboom.com/twitterimages/uploads/2019/11/Lamborghini-500.jpg" class="img-fluid"></div>
+                          <div class="col m-0 p-1"><img src="https://sukhis.com/app/uploads/2019/08/S94A9780-2-500x400.jpg" class="img-fluid"></div>
+                          <div class="col m-0 p-1"><img src="https://numeralpaint.com/wp-content/uploads/2021/07/spongbob-and-patrick-christmas-paint-by-numbers-500x400.jpg" class="img-fluid"></div>
+                          <div class="col m-0 p-1"><img src="https://www.midstatepools.com/wp-content/uploads/2016/03/mid-state-pools-outdoor-living-waterfall-5-500x400.jpg" class="img-fluid"></div>
+                          <div class="col m-0 p-1"><img src="https://images.squarespace-cdn.com/content/v1/5988f92ad7bdce3f101264f6/1597786384859-6NJ1R92M14Z91WLNMZE6/AlderII-Red-Poodle-Dog-Melissa-Laggis-14.jpg?format=500w" class="img-fluid"></div>
+                          <div class="col m-0 p-1"><img src="https://www.blackfootedferret.org/uploads/1/2/7/7/127791157/ferretdecline-500x400_4.png" class="img-fluid"></div>
+                          <div class="col m-0 p-1"><img src="https://audreyslittlefarm.com/wp-content/uploads/2019/10/Old-Fashioned-Peanut-Butter-Fudge-500x400.jpg" class="img-fluid"></div>
+                          <div class="col m-0 p-1"><img src="https://i.pinimg.com/564x/7a/5b/c8/7a5bc813bdcbd10f5383bb4da0b6ed0f.jpg" class="img-fluid"></div>
+                        </div>
+                    </div>
+                </div>
+            <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0">
+                    <div class="container d-none d-md-flex flex-column align-items-center">
+                        <div class="card w-50 m-3" id="Post"> 
+                            <ul class="list-group list-group-flush">
+                              <li class="list-group-item clearfix pb-0 mb-0">
+                                <p class="float-start"><b>First Post on Instagram</b></p><p class="float-end"><b>01/99</b></p>
+                              </li>
+                              <li class="list-group-item p-0"><img class="card-img" src="https://d319i1jp2i9xq6.cloudfront.net/upload/images/8068/8068_p.jpg?20150107041042"></li>
+                              <li class="list-group-item">
+                                <p><b>531 Likes</b><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                              </li>
+                            </ul>
+                        </div>
+                        <div class="card w-50 m-3" id="Post"> 
+                            <ul class="list-group list-group-flush">
+                              <li class="list-group-item clearfix pb-0 mb-0">
+                                <p class="float-start"><b>That creepy picture from the first exercise</b></p><p class="float-end"><b>02/99</b></p>
+                              </li>
+                              <li class="list-group-item p-0"><img class="card-img" src="https://www.designboom.com/twitterimages/uploads/2019/11/Lamborghini-500.jpg"></li>
+                              <li class="list-group-item">
+                                <p><b>023 Likes</b><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                              </li>
+                            </ul>
+                        </div>
+                        <div class="card w-50 m-3" id="Post"> 
+                            <ul class="list-group list-group-flush">
+                              <li class="list-group-item clearfix pb-0 mb-0">
+                                <p class="float-start"><b>Look what Moni made for me!</b></p><p class="float-end"><b>04/99</b></p>
+                              </li>
+                              <li class="list-group-item p-0"><img class="card-img" src="https://sukhis.com/app/uploads/2019/08/S94A9780-2-500x400.jpg"></li>
+                              <li class="list-group-item">
+                                <p><b>238 Likes</b><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                              </li>
+                            </ul>
+                        </div>
+                        <div class="card w-50 m-3" id="Post"> 
+                            <ul class="list-group list-group-flush">
+                              <li class="list-group-item clearfix pb-0 mb-0">
+                                <p class="float-start"><b>One of my favorite bands</b></p><p class="float-end"><b>09/99</b></p>
+                              </li>
+                              <li class="list-group-item p-0"><img class="card-img" src="https://i.pinimg.com/564x/7a/5b/c8/7a5bc813bdcbd10f5383bb4da0b6ed0f.jpg""></li>
+                              <li class="list-group-item">
+                                <p><b>666 Likes</b><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                              </li>
+                            </ul>
+                        </div>
+                    </div>
+            </div>
+            </div>
+        </section>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+</body>
+</html>
